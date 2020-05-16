@@ -12,7 +12,11 @@ namespace Recursion
         
         static void Main(string[] args)
         {
-            Rec.PrintNumbers(3,3,true);
+            int[] numbers = new[] { 1, 1, 1, 1, 1 };
+            Sum sum = new Sum(numbers);
+            ref int num = -1;
+            Console.WriteLine(ref sum.Calculate(num));
+            //Rec.PrintNumbers(3,3,true);
             //int[] firstSensor = new int[] {15, -4, 56, - 10, - 23};
             //int[] secondSensor = new int[] {14, -9, 56, 14, -23};
             //Console.WriteLine(Rec.totalDiffDispacher(firstSensor, secondSensor, 5));
